@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 1 to 11 chapters</title>
+</head>
+<body>
+    <!-- chapter 1 -->
+
+    <script>
+        alert("Welcome to Anas home page!");
+        document.write("ALERTS | JAVASCRIPT<br>");
+        document.write("Page 2 of 3<br>");
+        document.write("ALERTS | JAVASCRIPT<br>");
+        document.write("Page 2 of 3<br>");
+        console.log("This message is generated through the browser's developer console.");
+    </script>
+
+
+    <!-- cheapter 2 -->
+
+    <script>
+        var username;
+        var myName = "Muhammad Anas";
+        var message;
+        message = "Hello World";
+        alert(message);
+        var studentName = "Muhammad Anas";
+        var studentAge = 25;
+        var studentClass = "Grade 10";
+        alert("Name: " + studentName + "\nAge: " + studentAge + "\nClass: " + studentClass);
+        alert("PIZZA\nPIZZ\nPIZ\nPI\nP");
+        var email = "muhammadanassheikh54@gmail.com";
+        alert("My email address is " + email);
+        var book = "A smarter way to learn JavaScript";
+        alert("I am currently reading the book: " + book);
+        document.write("Yah! I can write HTML content through JavaScript");
+        var pattern = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
+        alert(pattern);
+        document.write("<br>" + pattern);
+    </script>
+
+    <!-- chapter 4 -->
+
+    <h1>Rules for naming JS variables</h1>
+    <p>Variable names can only contain letters, digits, underscores, and dollar signs.</p>
+    <p>For example $my_1stVariable</p>
+    <p>Variables must begin with a letter, underscore, or dollar sign.</p>
+    <p>For example $name, _name, or name</p>
+    <p>Variable names are case-sensitive.</p>
+    <p>Variable names should not be JS reserved keywords.</p>
+
+
+   <!-- chapter 5 -->
+
+    <script>
+        var num1 = 5;
+        var num2 = 3;
+        var sum = num1 + num2;
+        document.write("The sum is: " + sum);
+      </script>
+      <script>
+        var num1 = 10;
+        var num2 = 5;
+        var subtract = num1 - num2;
+        var multiply = num1 * num2;
+        var divide = num1 / num2;
+        var modulus = num1 % num2;
+        document.write("Subtraction: " + subtract + "<br>");
+        document.write("Multiplication: " + multiply + "<br>");
+        document.write("Division: " + divide + "<br>");
+        document.write("Modulus: " + modulus);
+      </script>
+      <script>
+        var num;
+        document.write("Value after variable declaration is: " + num + "<br>");
+        num = 5;
+        document.write("Initial value: " + num + "<br>");
+        num++;
+        document.write("Value after increment is: " + num + "<br>");
+        num += 7;
+        document.write("Value after addition is: " + num + "<br>");
+        num--;
+        document.write("Value after decrement is: " + num + "<br>");
+        var remainder = num % 3;
+        document.write("The remainder after dividing by 3 is: " + remainder);
+      </script>
+
+
+<!-- chapter 6 to 9 -->
+
+    <script>
+        var number = parseInt(prompt("Enter a number:"));
+        var result = --number - --number + ++number + number--;
+        document.write("Result: " + result);
+    </script>
+
+<script>
+    var name = prompt("Enter your name:");
+    document.write("Hello, " + name + "!");
+</script>
+
+<script>
+    var number = parseInt(prompt("Enter a number:")) || 5;
+    document.write("<h2>Multiplication Table of " + number + "</h2>");
+    for (var i = 1; i <= 10; i++) {
+        document.write(number + " x " + i + " = " + (number * i) + "<br>");
+    }
+</script>
+
+<script>
+    var subject1 = prompt("Enter name of first subject:");
+    var subject2 = prompt("Enter name of second subject:");
+    var subject3 = prompt("Enter name of third subject:");
+    var totalMarks = 100;
+    
+    var obtainedMarks1 = parseInt(prompt("Enter obtained marks for " + subject1 + ":"));
+    var obtainedMarks2 = parseInt(prompt("Enter obtained marks for " + subject2 + ":"));
+    var obtainedMarks3 = parseInt(prompt("Enter obtained marks for " + subject3 + ":"));
+    
+    var totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
+    var percentage = (totalObtainedMarks / (totalMarks * 3)) * 100;
+    
+    document.write("<h2>Result</h2>");
+    document.write("<table>");
+    document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
+    document.write("<tr><td>" + subject1 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks1 + "</td></tr>");
+    document.write("<tr><td>" + subject2 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks2 + "</td></tr>");
+    document.write("<tr><td>" + subject3 + "</td><td>" + totalMarks + "</td><td>" + obtainedMarks3 + "</td></tr>");
+    document.write("<tr><td colspan='2'>Total</td><td>" + totalObtainedMarks + "</td></tr>");
+    document.write("<tr><td colspan='2'>Percentage</td><td>" + percentage + "%</td></tr>");
+    document.write("</table>");
+</script>
+    
+
+</body>
+<script src="app.js"></script>
+</html>
